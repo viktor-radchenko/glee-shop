@@ -15,8 +15,16 @@
     align-items: center;
     height: 100px;
     width: 100px;
+    border: none;
+    background-color: none;
     border-radius: 50%;
     background-color: $link;
+
+    &:focus,
+    &:active {
+      outline: transparent;
+    }
+
     &:hover {
       &::before {
         transform: scale(1);
@@ -30,7 +38,7 @@
     transform: translateX(3px);
   }
   
-  &__play-link::before {
+  &__btn::before {
     content: '';
     position: absolute;
     z-index: 0;

@@ -25,6 +25,11 @@
     color: $title;
     background-color: #f8f8f8;
     border-radius: 4px;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: 0px 6px 20px 3px rgba(37, 37, 37, 0.26);
+    }
   }
   
   &__title {
