@@ -1,0 +1,71 @@
+$bg: #fcd7b6;
+$default: #7b7b7b;
+$link: #a3bbc8;
+$bg-light: #fef7f0;
+$title: #191919;
+$accent: #243f4d;
+
+
+%dmsans-400 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 400;
+}
+
+%dmsans-500 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-700 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 700;
+}
+
+%rubik-400 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+%poppins-700 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+@mixin filter {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+@mixin filter-btn {
+  background-color: #fff;
+  border: none;
+  @extend %dmsans-700;
+  font-size: 16px;
+  color: #8b8b8b;
+  transition: color .3s;
+  cursor: pointer;
+  & + & {
+    margin-left: 30px;
+  }
+  &.mixitup-control-active,
+  &:hover {
+    color: $title;
+    outline: transparent;
+  }
+  &:active {
+    color: $title;
+    outline: transparent;
+  }
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

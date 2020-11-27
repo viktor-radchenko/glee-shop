@@ -1,0 +1,132 @@
+.header {
+  padding: 45px 15px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  // для того чтобы выстроить нав по макету
+  margin-left: 100px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 1.1;
+    color: $accent;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+    &:hover {
+      border-color: $accent;
+    }
+  }
+
+  &__item {
+    & + & {
+      margin-left: 35px;
+    }
+  }
+}
+
+.user-nav {
+  display: flex;
+
+  &__search {
+    background-image: url('../images/icons/search.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #edf1f4;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $accent;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 180px;
+    margin-right: 20px;
+    border-radius: 25px;
+    background-color: $bg;
+  }
+
+  &__line {
+    height: 32px;
+    width: 1px;
+    background-color: #fde7d3;
+  }
+
+  &__link {
+    position: relative;
+    @extend %dmsans-400;
+    font-size: 10px;
+    line-height: 2.2;
+    text-align: center;
+    color: $accent;
+
+    &--like {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-image: url('../images/icons/like.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  
+    &--cart {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-image: url('../images/icons/cart.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  
+  
+  &__num {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    // высота строки в px чтобы стояло ровно
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  &__menu {
+    background-image: url('../images/icons/bento.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #a3bbc8;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $accent;
+    }
+  }
+}
