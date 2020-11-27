@@ -1,0 +1,52 @@
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin: 60px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &__btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: none;
+    background-color: none;
+    border-radius: 50%;
+    background-color: $link;
+
+    &:focus,
+    &:active {
+      outline: transparent;
+    }
+
+    &:hover {
+      &::before {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 3;
+    transform: translateX(3px);
+  }
+  
+  &__btn::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: rgba(163, 187, 200, .4);
+    transform: scale(0);
+    transition: transform .3s;
+  }
+}

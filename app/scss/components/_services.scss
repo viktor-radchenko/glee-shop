@@ -1,0 +1,69 @@
+.services {
+
+  &__inner {
+  padding: 0;
+  display: grid;
+  background-color: $bg-light;
+  grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__info {
+    // padding: 45px 0 45px 220px;
+    padding: 35px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e8e4df;
+  }
+
+  &__item:last-child {
+    border-right: none;
+  }
+
+  &__title {
+    display: block;
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 2.1;
+    color: #414141;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+      position: absolute;
+      top: 10px;
+      left: -75px;
+      z-index: 3;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &--support::before {
+      background-image: url('../images/icons/24-7.svg');
+    }
+
+    &--delivery::before {
+      background-image: url('../images/icons/delivery.svg');
+    }
+
+    &--payment::before {
+      background-image: url('../images/icons/payment.svg');
+    }
+  }
+
+  &__text {
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+
+    span {
+      display: block;
+    }
+  }
+}

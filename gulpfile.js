@@ -4,6 +4,10 @@ const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
+const svgmin = require("gulp-svgmin");
+const svgSprite = require("gulp-svg-sprite");
+const cheerio = require("gulp-cheerio");
+const replace = require("gulp-replace");
 const del = require("del");
 const browserSync = require("browser-sync").create();
 
@@ -46,9 +50,44 @@ const images = () => {
     .pipe(dest('dist/images'))
 }
 
+const svg = () => {
+  return src('app/images/icons/*.svg')
+    .pipe(svgmin({
+      js2svg: {
+        pretty: true
+      }
+    }))
+    .pipe(cheerio({
+      run: ($) => {
+				$('[fill]').removeAttr('fill');
+				$('[stroke]').removeAttr('stroke');
+				$('[style]').removeAttr('style');
+      },
+      parserOptions: {xmlMode: true}
+    }))
+    .pipe(replace('&gt;', '>'))
+    .pipe(svgSprite({
+			mode: {
+				symbol: {
+					sprite: "app/images/sprite.svg",
+					render: {
+						scss: {
+							dest:'app/scss/common/_sprite.scss',
+							template: "app/scss/templates/_sprite_template.scss"
+						}
+					}
+				}
+			}
+    }))
+    .pipe(dest('app/'));
+}
+
 const scripts = () => {
   return src([
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     'app/js/main.js',
   ])
   .pipe(concat('main.min.js'))
@@ -82,6 +121,7 @@ exports.browsersync = browsersync;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.watcher = watcher;
+exports.svg = svg;
 
 exports.build = series(cleanDist, images, build);
 exports.default = parallel(styles, scripts, browsersync, watcher);
