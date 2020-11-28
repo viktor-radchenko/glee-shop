@@ -9,11 +9,24 @@
   }
   
   &__inner {
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 15px 85px;
     display: flex;
     align-items: center;
+    min-height: 820px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url('../../images/slider/slider-round-bg.png');
+      height: 633px;
+      width:  633px;
+      right: -120px;
+      z-index: -1;
+    }
   }
   
   &__content {
@@ -50,10 +63,15 @@
     background-color: $link;
     cursor: pointer;
     transition: all .3s;
+
     &-arrow {
-    margin-left: 60px;
-    transition: transform .5s;
+      margin-left: 60px;
+      transition: transform .5s;
+      width: 25px;
+      height: 13px;
+      fill: #fff;
     }
+
     &:hover {
       box-shadow: inset 0px 0px 10px #436372;
     }
