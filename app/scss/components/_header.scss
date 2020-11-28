@@ -39,14 +39,14 @@
   display: flex;
 
   &__search {
-    background-image: url('../images/icons/search.svg');
+    background-image: url('../images/icons/sprite.svg#search');
+    background-size: 16px;
     background-repeat: no-repeat;
     background-position: center center;
     width: 50px;
     height: 50px;
     margin-right: 20px;
     border-radius: 50%;
-    background-color: #edf1f4;
     border: 1px solid transparent;
     transition: border-color 0.3s;
     cursor: pointer;
@@ -58,18 +58,12 @@
 
   &__wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 180px;
     margin-right: 20px;
     border-radius: 25px;
     background-color: $bg;
-  }
-
-  &__line {
-    height: 32px;
-    width: 1px;
-    background-color: #fde7d3;
   }
 
   &__link {
@@ -84,16 +78,30 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-image: url('../images/icons/like.svg');
+      background-image: url('../images/icons/sprite.svg#like');
+      background-size: 20px;
       background-repeat: no-repeat;
       background-position: center center;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 32px;
+        width: 1px;
+        background-color: #fde7d3;
+        position: absolute;
+        right: -25px;
+        top: 9px
+      }
     }
   
     &--cart {
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-image: url('../images/icons/cart.svg');
+      background-image: url('../images/icons/sprite.svg#cart');
+      background-size: 20px;
       background-repeat: no-repeat;
       background-position: center center;
     }
@@ -120,6 +128,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    color: #fff;
     background-color: #a3bbc8;
     border: 1px solid transparent;
     transition: border-color 0.3s;

@@ -32,9 +32,16 @@
     }
   }
 
+  &__play {
+    width: 25px;
+    height: 23px;
+    fill: #fff;
+    z-index: 3;
+    transform: translateX(2px);
+  }
+
   &__icon {
     position: relative;
-    z-index: 3;
     transform: translateX(3px);
   }
   

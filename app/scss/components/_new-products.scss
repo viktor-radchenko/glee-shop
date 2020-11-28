@@ -63,6 +63,7 @@
       height: 9px;
       width: 22px;
       margin-left: 60px;
+      fill: #436372;
       transition: transform .5s;
     }
 
@@ -73,10 +74,8 @@
 
     &:hover &-arrow {
       transform: translateX(5px);
-      path {
-        fill: rgb(255, 255, 255);
+      fill: #fff;
       }
-    }
   }
 }
 
