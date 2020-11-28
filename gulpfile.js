@@ -51,7 +51,7 @@ const images = () => {
 };
 
 const svg = () => {
-  return src("app/images/icons/*.svg")
+  return src(["app/images/icons/*.svg", "!app/images/icons/sprite.svg"])
     .pipe(
       svgmin({
         js2svg: {

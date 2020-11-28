@@ -61,6 +61,7 @@
     padding: 0 15px;
     background-color: $bg-light;
     border: none;
+    
     &::placeholder{
       @extend %dmsans-400;
       font-size: 12px;
