@@ -35,6 +35,10 @@
 
   &__link {
     margin-bottom: 7px;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__logo {
@@ -51,6 +55,16 @@
   &__tel {
     display: block;
     margin-bottom: 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__email {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__text {
@@ -61,6 +75,10 @@
     display: flex;
     flex-wrap: nowrap;
     height: 35px;
+  }
+
+  &__label {
+    display: none;
   }
 
   &__input {
