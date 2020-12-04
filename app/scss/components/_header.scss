@@ -37,10 +37,9 @@
 
 .user-nav {
   display: flex;
+  font-size: 0;
 
-  &__search {
-    background-image: url('../images/icons/sprite.svg#search');
-    background-size: 16px;
+  &__btn {
     background-repeat: no-repeat;
     background-position: center center;
     width: 50px;
@@ -53,6 +52,18 @@
 
     &:hover {
       border-color: $accent;
+    }
+
+    &--search {
+      background-image: url('../images/icons/sprite.svg#search');
+      background-size: 16px;
+    }
+
+    &--menu {
+      background-image: url('../images/icons/bento.svg');
+      background-color: #a3bbc8;
+      color: #fff;
+
     }
   }
 
@@ -68,11 +79,7 @@
 
   &__link {
     position: relative;
-    @extend %dmsans-400;
-    font-size: 10px;
-    line-height: 2.2;
-    text-align: center;
-    color: $accent;
+    font-size: 0;
 
     &--like {
       width: 50px;
@@ -114,28 +121,15 @@
     right: 5px;
     width: 16px;
     height: 16px;
+    @extend %dmsans-400;
+    font-size: 10px;
+    line-height: 2.2;
+    text-align: center;
+    color: $accent;
     // высота строки в px чтобы стояло ровно
     line-height: 16px;
     text-align: center;
     border-radius: 50%;
     background-color: #fff;
-  }
-
-  &__menu {
-    background-image: url('../images/icons/bento.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #fff;
-    background-color: #a3bbc8;
-    border: 1px solid transparent;
-    transition: border-color 0.3s;
-    cursor: pointer;
-
-    &:hover {
-      border-color: $accent;
-    }
   }
 }

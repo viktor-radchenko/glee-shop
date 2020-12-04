@@ -53,34 +53,6 @@
     color: #436372;
   }
 
-  &__btn {
-    padding: 25px 20px 25px 30px;
-    @extend %rubik-500;
-    font-size: 15px;
-    line-height: 12px;
-    color: #fff;
-    border: none;
-    background-color: $link;
-    cursor: pointer;
-    transition: all .3s;
-
-    &-arrow {
-      margin-left: 60px;
-      transition: transform .5s;
-      width: 25px;
-      height: 13px;
-      fill: #fff;
-    }
-
-    &:hover {
-      box-shadow: inset 0px 0px 10px #436372;
-    }
-
-    &:hover &-arrow {
-    transform: translateX(5px);
-    }
-  }
-  
   &__img {
     margin-right: -115px;
   }

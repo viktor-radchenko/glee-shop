@@ -4,6 +4,7 @@
 @import 'conf/libs';
 @import 'conf/global';
 @import 'conf/sprite';
+@import 'conf/buttons';
 
 @import 'components/header';
 
@@ -15,5 +16,8 @@
 @import 'components/video';
 @import 'components/blog';
 @import 'components/partners';
+
+@import 'components/featured-card';
+@import 'components/filter-btn';
 
 @import 'components/footer';

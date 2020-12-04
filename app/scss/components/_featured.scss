@@ -1,13 +1,5 @@
 .featured {
-  padding-bottom: 75px;
-
-  &__filter {
-    @include filter;
-  }
-
-  &__btn {
-    @include filter-btn;
-  }
+  padding: 65px 0 75px;
 
   &__items {
     display: grid;
@@ -37,7 +29,7 @@
   &__item-title {
     display: block;
     @extend %dmsans-500;
-    line-height: 40px;
+    line-height: 2.5;
     color: $accent;
   }
 
