@@ -1,0 +1,44 @@
+.design-card {
+  position: relative;
+  padding: 35px 0 0 35px;
+  @extend %dmsans-700;
+  color: $title;
+  border-radius: 4px;
+  background-size: contain;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0px 6px 20px 3px rgba(37, 37, 37, 0.26);
+  }
+
+  &__title {
+    max-width: 180px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1;
+    color: $link;
+  }
+
+  &__img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__link {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 0;
+  }
+}

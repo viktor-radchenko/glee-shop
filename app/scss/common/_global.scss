@@ -37,9 +37,15 @@ body {
 }
 
 .title {
-  margin-bottom: 35px;
+  margin-bottom: 10px;
   @extend %dmsans-700;
   font-size: 36px;
   color: $title;
   text-align: center;
+}
+
+.text-nowrap {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }

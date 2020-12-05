@@ -13,7 +13,7 @@ $(function () {
 
   const featured = mixitup(".featured__items", {
     selectors: {
-      control: ".featured__btn",
+      control: ".featured__filter-btn",
     },
   });
 

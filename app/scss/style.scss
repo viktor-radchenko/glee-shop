@@ -1,10 +1,10 @@
-@import 'conf/vars';
-@import 'conf/fonts';
-@import 'conf/reset';
-@import 'conf/libs';
-@import 'conf/global';
-@import 'conf/sprite';
-@import 'conf/buttons';
+@import 'common/vars';
+@import 'common/fonts';
+@import 'common/reset';
+@import 'common/libs';
+@import 'common/global';
+@import 'common/sprite';
+@import 'common/buttons';
 
 @import 'components/header';
 
@@ -17,7 +17,9 @@
 @import 'components/blog';
 @import 'components/partners';
 
-@import 'components/featured-card';
+@import 'components/product-card';
+@import 'components/design-card';
+@import 'components/blog-card';
 @import 'components/filter-btn';
 
 @import 'components/footer';
