@@ -1,0 +1,57 @@
+.auth-form {
+  width: 470px;
+  @extend %rubik-400;
+  font-size: 14px;
+  line-height: 2;
+  color: #436372;
+
+  &__label {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    height: 60px;
+    border: none;
+    border: 1px solid #f6f6f6;
+    font-size: 18px;
+    color: $link;
+    outline: transparent;
+
+    &:focus {
+      border-color: $accent;
+    }
+  }
+
+  &__submit {
+    display: block;
+    margin-top: 35px;
+    border: none;
+    background: none;
+    @extend %rubik-500;
+    color: #fff;
+    background-color: $link;
+    width: 100%;
+    height: 60px;
+    outline: transparent;
+    cursor: pointer;
+  }
+
+  &__control {
+    display: flex;
+    padding: 26px 0;
+    border-bottom: 1px solid #f6f6f6;
+  }
+
+  &__checkbox {
+    display: inline-block;
+  }
+
+  &__forgot-pass {
+    display: block;
+    margin-left: auto;
+  }
+}

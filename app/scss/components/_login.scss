@@ -1,0 +1,19 @@
+.login {
+  padding: 110px 0 120px;
+  margin: 0 auto;
+  @extend %rubik-500;
+
+  &__text {
+    display: block;
+    margin: 25px 0 20px;
+    text-align: center;
+  }
+
+  &__register-link {
+    display: block;
+    padding: 15px 0;
+    border: 1px solid $accent;
+    color: $accent;
+    text-align: center;
+  }
+}

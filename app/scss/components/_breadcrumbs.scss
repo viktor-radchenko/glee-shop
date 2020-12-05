@@ -1,0 +1,11 @@
+.breadcrumbs {
+  display: flex;
+
+  &__item {
+
+    & + &::before {
+      content: "/";
+      margin-left: 5px;
+    }
+  }
+}

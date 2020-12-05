@@ -1,6 +1,13 @@
 .partners {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 90px 0 !important;
+  padding: 90px 0;
+  background-color: $bg-light;
+
+  &__list {
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }

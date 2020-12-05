@@ -21,6 +21,10 @@ $accent: #243f4d;
   font-weight: 700;
 }
 
+%rubik-300 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
 %rubik-400 {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
@@ -36,32 +40,6 @@ $accent: #243f4d;
   font-weight: 700;
 }
 
-@mixin filter {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-@mixin filter-btn {
-  background-color: #fff;
-  border: none;
-  @extend %dmsans-700;
-  font-size: 16px;
-  color: #8b8b8b;
-  transition: color .3s;
-  cursor: pointer;
-  & + & {
-    margin-left: 30px;
-  }
-  &.mixitup-control-active,
-  &:hover {
-    color: $title;
-    outline: transparent;
-  }
-  &:active {
-    color: $title;
-    outline: transparent;
-  }
-}
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
