@@ -59,69 +59,72 @@
     </div>
   </header>
 
-  <div class="top">
-    <div class="top__inner">
-      <h2 class="top__title">
-        Log in
-      </h2>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Home</a>
+  <main class="main">
+    
+    <div class="top">
+      <div class="top__inner">
+        <h2 class="top__title">
+          Log in
+        </h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Log in</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <section class="login">
+        
+        <form class="auth-form" action="" method="POST">
+          <label class="auth-form__label" for="authUsernameEmail">
+            Username or Email *
+            <input class="auth-form__input" type="text" name="authUsernameEmail" required>
+          </label>
+          <label class="auth-form__label" for="authPassword">
+            Password *
+            <input class="auth-form__input" type="password" name="authPassword" required>
+          </label>
+          <button class="auth-form__submit" type="submit">Login</button>
+          <div class="auth-form__control">
+            <label class="auth-form__checkbox">
+              <input class="auth-form__input--checkbox" type="checkbox">
+              Remember me
+            </label>
+            <a class="auth-form__forgot-pass" href="#">Lost your password?</a>
+          </div>
+        </form>
+  
+        <span class="login__text">
+          Not registered? No problem
+        </span>
+        <a class="login__register-link" href="#">Create an account</a>
+    </section>
+  
+    <div class="partners">
+      <ul class="partners__list">
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/1.png">
         </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Log in</a>
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/2.png">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/3.png">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/4.png">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/5.png">
         </li>
       </ul>
-    </div>
-  </div>
+    </div>    
 
-  <section class="login">
-      
-      <form class="auth-form" action="" method="POST">
-        <label class="auth-form__label" for="authUsernameEmail">
-          Username or Email *
-          <input class="auth-form__input" type="text" name="authUsernameEmail" required>
-        </label>
-        <label class="auth-form__label" for="authPassword">
-          Password *
-          <input class="auth-form__input" type="password" name="authPassword" required>
-        </label>
-        <button class="auth-form__submit" type="submit">Login</button>
-        <div class="auth-form__control">
-          <label class="auth-form__checkbox">
-            <input class="auth-form__input--checkbox" type="checkbox">
-            Remember me
-          </label>
-          <a class="auth-form__forgot-pass" href="#">Lost your password?</a>
-        </div>
-      </form>
-
-      <span class="login__text">
-        Not registered? No problem
-      </span>
-      <a class="login__register-link" href="#">Create an account</a>
-  </section>
-
-  <div class="partners">
-    <ul class="partners__list">
-      <li class="partners__item">
-        <img class="partners__logo" alt="partner logo" src="images/partners/1.png">
-      </li>
-      <li class="partners__item">
-        <img class="partners__logo" alt="partner logo" src="images/partners/2.png">
-      </li>
-      <li class="partners__item">
-        <img class="partners__logo" alt="partner logo" src="images/partners/3.png">
-      </li>
-      <li class="partners__item">
-        <img class="partners__logo" alt="partner logo" src="images/partners/4.png">
-      </li>
-      <li class="partners__item">
-        <img class="partners__logo" alt="partner logo" src="images/partners/5.png">
-      </li>
-    </ul>
-  </div>
-
+  </main>
 
   <footer class="footer">
     <div class="container">
