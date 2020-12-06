@@ -6,6 +6,7 @@
     font-size: 18px;
     display: block;
     color: $accent;
+    text-transform: uppercase;
 
     &::after {
       content: "";
