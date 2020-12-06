@@ -2,6 +2,7 @@
   padding: 110px 0 120px;
   margin: 0 auto;
   @extend %rubik-500;
+  color: $accent;
 
   &__text {
     display: block;
