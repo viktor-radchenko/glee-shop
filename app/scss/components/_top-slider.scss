@@ -54,7 +54,10 @@
   }
 
   &__img {
+    display: block;
     margin-right: -115px;
+    max-width: 615px;
+    max-height: 615px;
   }
 
   .slick-dots {
