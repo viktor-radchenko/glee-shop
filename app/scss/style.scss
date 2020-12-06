@@ -15,17 +15,18 @@
 @import 'components/new-design';
 @import 'components/video';
 @import 'components/blog';
-@import 'components/partners';
-@import 'components/top';
-
 @import 'components/login';
-@import 'components/auth-form';
 @import 'components/terms';
-
-@import 'components/breadcrumbs';
-@import 'components/product-card';
-@import 'components/design-card';
-@import 'components/blog-card';
-@import 'components/filter-btn';
+@import 'components/catalog';
 
 @import 'components/footer';
+
+@import 'blocks/breadcrumbs';
+@import 'blocks/filter';
+@import 'blocks/partners';
+@import 'blocks/top';
+@import 'blocks/auth-form';
+@import 'blocks/product-card';
+@import 'blocks/design-card';
+@import 'blocks/blog-card';
+@import 'blocks/filter-btn';
