@@ -42,6 +42,10 @@ body {
   font-size: 36px;
   color: $title;
   text-align: center;
+
+  &--main {
+    font-size: 0;
+  }
 }
 
 .text-nowrap {

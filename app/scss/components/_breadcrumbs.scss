@@ -1,11 +1,12 @@
 .breadcrumbs {
   display: flex;
+  justify-content: center;
 
   &__item {
 
     & + &::before {
       content: "/";
-      margin-left: 5px;
+      margin: 0 5px 0 10px;
     }
   }
 }
