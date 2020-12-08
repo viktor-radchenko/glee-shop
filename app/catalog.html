@@ -81,17 +81,418 @@
       <div class="container">
         <div class="catalog__inner">
 
-          <div class="catalog__filter filter">
-            <span class="filter__title">Hello</span>
+          <div class="catalog__filters">
+
+            <div class="filter__block">
+              <span class="filter__title">Category</span>
+              <ul class="filter__category-list">
+                <li class="filter__category-item">
+                  <a class="filter__category-link" href="#">Chair</a>
+                </li>
+                <li class="filter__category-item">
+                  <a class="filter__category-link" href="#">Table</a>
+                </li>
+                <li class="filter__category-item">
+                  <a class="filter__category-link" href="#">Lamp</a>
+                </li>
+                <li class="filter__category-item">
+                  <a class="filter__category-link" href="#">Watch</a>
+                </li>
+                <li class="filter__category-item">
+                  <a class="filter__category-link" href="#">Clock</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="filter__block">
+              <span class="filter__title">Price</span>
+              <form action="#" class="filter__form">
+                <input class="filter__range-input" type="text">
+                <div class="filter__range-price">
+                  <span>$<span class="filter__range-min"></span></span>
+                  <span>$<span class="filter__range-max"></span></span>
+                </div>
+              </form>
+            </div>
+            
+            <div class="filter__block">
+              <span class="filter__title">Brand</span>
+              <form class="filter__brand-form">
+
+                <label class="filter__checkbox">
+                  <input class="filter__brand-input" type="checkbox">
+                  <div class="filter__brand-checkbox">
+                    <span class="filter__brand-name">RFL</span>
+                    <span>(10)</span>
+                  </div>
+                </label>
+
+                <label class="filter__checkbox">
+                  <input class="filter__brand-input" type="checkbox">
+                  <div class="filter__brand-checkbox">
+                    <span class="filter__brand-name">Brothers</span>
+                    <span>(21)</span>
+                  </div>
+                </label>
+
+                <label class="filter__checkbox">
+                  <input class="filter__brand-input" type="checkbox">
+                  <div class="filter__brand-checkbox">
+                    <span class="filter__brand-name">Regal</span>
+                    <span>(3)</span>
+                  </div>
+                </label>
+
+                <label class="filter__checkbox">
+                  <input class="filter__brand-input" type="checkbox">
+                  <div class="filter__brand-checkbox">
+                    <span class="filter__brand-name">Nadia</span>
+                    <span>(14)</span>
+                  </div>
+                </label>
+
+                <label class="filter__checkbox">
+                  <input class="filter__brand-input" type="checkbox">
+                  <div class="filter__brand-checkbox">
+                    <span class="filter__brand-name">Otobi</span>
+                    <span>(6)</span>
+                  </div>
+                </label>
+                
+              </form>
+            </div>
+
+            <div class="filter__block">
+              <span class="filter__title">Recent Products</span>
+              <article class="filter__recent-card">
+                <img class="filter__recent-img" src="images/products/recent-product-1.jpg"
+                      alt="recent product image">
+                <div class="filter__recent-info">
+                  <span class="filter__recent-title">Pendant lamp</span>
+                  <div class="filter__recent-star" data-rateyo-rating="4"></div>
+                  <span class="filter__recent-price">23$</span>
+                </div>
+                <a class="filter__recent-link" href="#">Learn more</a>
+              </article>
+              <article class="filter__recent-card">
+                <img class="filter__recent-img" src="images/products/recent-product-3.jpg"
+                      alt="recent product image">
+                <div class="filter__recent-info">
+                  <span class="filter__recent-title">Pendant lamp</span>
+                  <div class="filter__recent-star" data-rateyo-rating="4"></div>
+                  <span class="filter__recent-price">23$</span>
+                </div>
+                <a class="filter__recent-link" href="#">Learn more</a>
+              </article>
+              <article class="filter__recent-card">
+                <img class="filter__recent-img" src="images/products/recent-product-3.jpg"
+                      alt="recent product image">
+                <div class="filter__recent-info">
+                  <span class="filter__recent-title">Pendant lamp</span>
+                  <div class="filter__recent-star" data-rateyo-rating="4"></div>
+                  <span class="filter__recent-price">23$</span>
+                </div>
+                <a class="filter__recent-link" href="#">Learn more</a>
+              </article>
+            </div>
+
           </div>
 
           <div class="catalog__products">
+            <div class="catalog__cards">
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/1.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/2.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/3.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/4.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/5.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/6.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/1.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/2.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/3.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/4.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/5.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/6.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+            </div>
 
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__page pagination__page--active">
+                  <a class="pagination__link" href="#">1</a>
+                </li>
+                <li class="pagination__page">
+                  <a class="pagination__link" href="#">2</a>
+                </li>
+                <li class="pagination__page">
+                  <a class="pagination__link" href="#">3</a>
+                </li>
+              </ul>
+              <a class="pagination__page pagination__page--next" href="#">Next</a>
+            </div>
           </div>
 
         </div>
       </div>
     </section>
+
+    <div class="partners">
+      <ul class="partners__list">
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/1.png">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/2.png">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/3.png">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/4.png">
+        </li>
+        <li class="partners__item">
+          <img class="partners__logo" alt="partner logo" src="images/partners/5.png">
+        </li>
+      </ul>
+    </div>   
 
   </main>
 

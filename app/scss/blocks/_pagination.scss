@@ -1,0 +1,23 @@
+.pagination {
+
+  display: flex;
+
+  &__list {
+    display: flex;
+  }
+
+  &__page {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid $link;
+    text-align: center;
+    color: $accent;
+    margin: 0 8px;
+
+    &--next,
+    &--active {
+      background-color: $link;
+      color: #fff;
+    }
+  }
+}
