@@ -9,6 +9,10 @@
   cursor: pointer;
   transition: all .3s;
 
+  @include r(570) {
+    padding: 20px;
+  }
+
   &::after {
     content: "";
     display: inline-block;

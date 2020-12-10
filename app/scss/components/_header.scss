@@ -1,6 +1,10 @@
 .header {
   padding: 45px 15px;
 
+  @include r(440) {
+    padding: 25px 10px;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -8,12 +12,48 @@
   }
 }
 
+.logo {
+  @include r(440) {
+    width: 100px;
+  }
+}
+
 .menu {
   // для того чтобы выстроить нав по макету
   margin-left: 100px;
+  z-index: 1;
+
+  @include r(1180) {
+    margin-left: 0;
+  }
+
+  @include r(996) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 30%;
+    height: 100vh;
+    background-color: $link;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.5s;
+    transform: translateX(-200%);
+    box-shadow: 0 0 20px 5px rgba(17, 17, 17, 0.219);
+    overflow: hidden;
+  }
+  &--active {
+    overflow-y: scroll;
+    transform: translateY(0);
+  }
 
   &__list {
     display: flex;
+
+    &--active {
+      flex-direction: column;
+    }
   }
 
   &__link {
@@ -22,7 +62,7 @@
     line-height: 1.1;
     color: $accent;
     border-bottom: 1px solid transparent;
-    transition: border-color 0.3s;
+    transition: all 0.3s;
     &:hover {
       border-color: $accent;
     }
@@ -31,6 +71,22 @@
   &__item {
     & + & {
       margin-left: 35px;
+    }
+
+    &--active {
+      & + & {
+        margin-left: 0;
+        margin-top: 50px;
+      }
+      
+      .menu__link {
+        font-size: 24px;
+
+        &:hover {
+          color: #fff;
+          border-color: #fff;
+        }
+      }
     }
   }
 }
@@ -49,6 +105,13 @@
     border: 1px solid transparent;
     transition: border-color 0.3s;
     cursor: pointer;
+    outline: transparent;
+
+    @include r(440) {
+      width: 30px;
+      height: 30px;
+      margin-right: 0;
+    }
 
     &:hover {
       border-color: $accent;
@@ -57,12 +120,22 @@
     &--search {
       background-image: url('../images/icons/sprite.svg#search');
       background-size: 16px;
+
+      @include r(1180) {
+        display: none;
+      }
     }
 
     &--menu {
       background-image: url('../images/icons/bento.svg');
       background-color: #a3bbc8;
+      background-repeat: no-repeat;
       color: #fff;
+
+      @include r(440) {
+        background-size: 15px;
+        margin-right: 0;
+      }
 
     }
   }
@@ -75,6 +148,10 @@
     margin-right: 20px;
     border-radius: 25px;
     background-color: $bg;
+
+    @include r(1180) {
+      display: none;
+    }
   }
 
   &__link {
@@ -132,4 +209,79 @@
     border-radius: 50%;
     background-color: #fff;
   }
+}
+
+
+// Анимированная кнопочка из Wave
+
+.menu__btn {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  background: none;
+  position: relative;
+  outline: transparent;
+  cursor: pointer;
+  display: none;
+  z-index: 2;
+
+  @include r(996) {
+    display: block;
+  }
+
+  @include r(440) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.menu__btn-line,
+.menu__btn-line::before,
+.menu__btn-line::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -15px;
+  width: 30px;
+  height: 2px;
+  background-color: $accent;
+}
+
+.menu__btn-line::before,
+.menu__btn-line::after {
+  content: "";
+  transition: all 0.4s;
+}
+
+.menu__btn-line::before {
+  transform: translateY(-10px);
+
+  @include r(440) {
+    transform: translateY(-7px);
+  }
+}
+
+.menu__btn-line::after {
+  transform: translateY(10px);
+
+  @include r(440) {
+    transform: translateY(7px);
+  }
+}
+
+.menu__btn--active .menu__btn-line {
+  height: 0;
+  background-color: #fff;
+}
+
+.menu__btn--active .menu__btn-line::before {
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.menu__btn--active .menu__btn-line::after {
+  background-color: #fff;
+  transform: rotate(-45deg);
 }

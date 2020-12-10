@@ -16,6 +16,7 @@
     margin-bottom: 15px;
     font-size: 20px;
     line-height: 1;
+    @include line-clamp(2);
   }
 
   &__subtitle {

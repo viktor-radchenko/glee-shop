@@ -24,7 +24,6 @@
   }
 
   &__category {
-    display: block;
     position: absolute;
     top: 235px;
     max-width: 300px;
@@ -39,31 +38,17 @@
 
   &__text {
     margin-bottom: 20px;
-    padding-bottom: 18px;
-    border-bottom: 1px solid #e0e0e0;
-    max-height: 120px;
-    overflow: hidden;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 50px;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgb(255,255,255);
-      background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(255,255,255,0) 100%);
-    }
+    @include line-clamp(3);
   }
-
+  
   &__details {
     display: flex;
+    padding-top: 20px;
     @extend %rubik-400;
     font-size: 12px;
     color: #222933;
     text-transform: uppercase;
+    border-top: 1px solid #e0e0e0;
   }
 
   &__date {
