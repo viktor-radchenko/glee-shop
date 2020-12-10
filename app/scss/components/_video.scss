@@ -1,4 +1,4 @@
-.video {
+  .video {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  @include r(768) {
+    margin-top: 0;
+  }
 
   &__btn {
     position: relative;
