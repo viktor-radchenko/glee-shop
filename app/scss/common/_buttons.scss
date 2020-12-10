@@ -24,6 +24,10 @@
     width: 18px;
     height: 15px;
     filter: invert(1);
+
+    @include r(1300) {
+      margin-left: 30px;
+    }
   }
 
   &:hover {

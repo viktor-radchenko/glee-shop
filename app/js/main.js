@@ -1,6 +1,6 @@
 $(function () {
   // Активация бургер меню
-  $(".menu__btn, .menu a").on("click", function () {
+  $(".menu__btn, .menu a").on("click", () => {
     $(".menu__btn").toggleClass("menu__btn--active");
     $(".menu").toggleClass("menu--active");
     $(".menu__list").toggleClass("menu__list--active");

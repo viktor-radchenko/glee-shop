@@ -1,20 +1,47 @@
 .new-products {
   padding-top: 100px;
 
+  @include r(570) {
+    padding-top: 0;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    @include r(996) {
+      flex-direction: column;
+      
+    }
   }
   
   &__item {
     position: relative;
     display: flex;
     align-items: center;
-    max-width: 870px;
-    width: 100%;
+    width: 80%;
     min-height: 390px;
     background-color: #feefe2;
     padding: 85px 150px 85px 130px;
+
+    @include r(1620) {
+      padding: 85px 30px 85px 30px;
+    }
+
+    @include r(996) {
+      width: 100%;
+      padding: 85px 50px 85px 100px
+    }
+    
+    @include r(570) {
+      width: 100%;
+      padding: 85px 15px 85px 50px
+    }
+
+    @include r(470) {
+      flex-direction: column;
+      padding: 40px 15px;
+    }
   }
 
   &__img {
@@ -22,12 +49,30 @@
     max-width: 235px;
     max-height: 410px;
     bottom: 85px;
+
+    @include r(996) {
+      position: static;
+      max-width: 235px;
+      max-height: 300px;
+    }
+
+    @include r(570) {
+      position: static;
+      max-width: 175px;
+      max-height: 250px;
+    }
   }
 
   &__content {
     max-width: 50%;
     margin-left: auto;
     color: $accent;
+
+    @include r(470) {
+      max-width: unset;
+      text-align: center;
+      padding-top: 30px;
+    }
   }
 
   &__title {
@@ -42,6 +87,7 @@
     margin-bottom: 20px;
     @extend %rubik-400;
     line-height: 30px;
+    @include line-clamp(2);
   }
 
   & + & {
