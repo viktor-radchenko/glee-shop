@@ -1,22 +1,45 @@
 .services {
 
   &__inner {
-  padding: 0;
-  display: grid;
-  background-color: $bg-light;
-  grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    display: grid;
+    background-color: $bg-light;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include r(570) {
+      display: flex;
+      flex-direction: column;
+    }  
   }
 
   &__info {
-    // padding: 45px 0 45px 220px;
-    padding: 35px;
+    padding: 35px 0;
     padding-left: 200px;
     display: flex;
     flex-direction: column;
     border-right: 1px solid #e8e4df;
 
+    @include r(1400) {
+      padding-left: 130px;
+    }
+
+    @include r(996) {
+      align-items: center;
+      padding: 70px 0 35px;
+      text-align: center;
+    }
+
+    @include r(570) {
+      padding: 65px 0 0;
+    }
+
+
     &:last-child {
       border-right: none;
+
+      @include r(570) {
+        padding-bottom: 20px;
+      }
     }
   }
 
@@ -27,6 +50,10 @@
     line-height: 2.1;
     color: #414141;
     position: relative;
+
+    @include r(1200) {
+      font-size: 16px;
+    }
 
 
     &::before {
@@ -42,6 +69,17 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+
+      @include r(1200) {
+        width: 40px;
+        height: 40px;
+        margin-right: 0;
+      }  
+
+      @include r(996) {
+        top: -40px;
+        left: calc(50% - 20px);
+      }
     }
 
     &--support::before {
@@ -64,6 +102,13 @@
     color: #585858;
     @include line-clamp(2);
 
+    @include r(1200) {
+      font-size: 14px;
+    }
+
+    @include r(570) {
+      display: none;
+    }
 
     span {
       display: block;
