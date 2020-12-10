@@ -6,6 +6,10 @@
   justify-content: center;
   line-height: 1;
 
+  @include r(470) {
+    padding: 15px 0;
+  }
+
   &__inner {
     text-align: center;
   }
@@ -16,9 +20,17 @@
     line-height: 1.1;
     color: #222933;
     margin-bottom: 10px;
+
+    @include r(470) {
+      font-size: 28px;
+    }
   }
 
   &__breadcrumbs {
     font-size: 14px;
+
+    @include r(470) {
+      font-size: 12px;
+    }
   }
 }

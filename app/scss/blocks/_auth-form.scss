@@ -1,6 +1,7 @@
 .auth-form {
-  width: 470px;
+  max-width: 490px;
   @extend %rubik-400;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 2;
   color: #436372;

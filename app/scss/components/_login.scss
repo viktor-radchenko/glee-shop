@@ -1,6 +1,5 @@
 .login {
-  padding: 110px 0 120px;
-  margin: 0 auto;
+  padding: 110px 10px 120px;
   @extend %rubik-500;
   color: $accent;
 
@@ -16,5 +15,7 @@
     border: 1px solid $accent;
     color: $accent;
     text-align: center;
+    max-width: 470px;
+    margin: 0 auto;
   }
 }

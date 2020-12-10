@@ -12,6 +12,11 @@
   <header class="header">
     <div class="container container--lg">
       <nav class="header__inner">
+         <!-- Анимированная иконка меню -->
+        <!-- Как быть в такой ситуации с блоками/элементами когда нужно это дела разнести по разным углам? -->
+        <button class="menu__btn" type="button">
+          <span class="menu__btn-line"></span>
+        </button>
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo">
         </a>
@@ -521,7 +526,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer__col">
+        <div class="footer__col footer__hidden">
           <span class="footer__title">Services</span>
           <ul class="footer__list">
             <li class="footer__link">
@@ -541,7 +546,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__col">
+        <div class="footer__col footer__hidden">
           <span class="footer__title">Account</span>
           <ul class="footer__list">
             <li class="footer__link">
