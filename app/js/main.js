@@ -7,6 +7,15 @@ $(function () {
     $(".menu__item").toggleClass("menu__item--active");
   });
 
+  // Активация фильтров в каталоге
+  $(".catalog__filters-btn").on("click", function() {
+    $(".catalog__filters").toggleClass("catalog__filters--active");
+  });
+
+  $(".catalog__filters-close").on("click", function() {
+    $(".catalog__filters").toggleClass("catalog__filters--active");
+  });
+
   $(".filter__range-input").ionRangeSlider({
     onStart: function (data) {
       $(".filter__range-min").text(data.from);
