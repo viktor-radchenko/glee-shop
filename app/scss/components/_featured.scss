@@ -2,10 +2,13 @@
   padding: 65px 0 75px;
 
   &__items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, minmax(max-content, 380px));
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include r(1110) {
+      justify-content: space-evenly;
+    }
   }
   
   &__item {

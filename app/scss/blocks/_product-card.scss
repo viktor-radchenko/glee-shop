@@ -8,6 +8,11 @@
   box-shadow: 0px 6px 47px 3px #2525250d;
   border-radius: 10px;
   width: 270px;
+  margin-bottom: 30px;
+
+  @include r(570) {
+    width: auto;
+  }
 
   &:hover {
     .product-card__icon-list {

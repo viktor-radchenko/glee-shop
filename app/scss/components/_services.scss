@@ -51,7 +51,7 @@
     color: #414141;
     position: relative;
 
-    @include r(1200) {
+    @include r(1180) {
       font-size: 16px;
     }
 
@@ -70,7 +70,7 @@
       background-position: center;
       background-size: contain;
 
-      @include r(1200) {
+      @include r(1180) {
         width: 40px;
         height: 40px;
         margin-right: 0;
@@ -102,7 +102,7 @@
     color: #585858;
     @include line-clamp(2);
 
-    @include r(1200) {
+    @include r(1180) {
       font-size: 14px;
     }
 

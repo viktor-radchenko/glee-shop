@@ -43,6 +43,14 @@ body {
   color: $title;
   text-align: center;
 
+  @include r(570) {
+    font-size: 30px;
+  }
+
+  @include r(440) {
+    font-size: 25px;
+  }
+
   &--main {
     font-size: 0;
   }

@@ -11,8 +11,16 @@
     transition: color .3s;
     cursor: pointer;
 
+    @include r(570) {
+      font-size: 14px;
+    }
+
     & + & {
       margin-left: 30px;
+
+      @include r(570) {
+        margin-left: 20px;
+      }
     }
 
     &.mixitup-control-active,
